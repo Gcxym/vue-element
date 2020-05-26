@@ -8,6 +8,28 @@
 import echarts from 'echarts'
 export default {
   name: 'PieChart',
+  props: {
+    name: {
+      type: String,
+      default: ''
+    },
+    unit: {
+      type: String,
+      default: ''
+    },
+    legendData: {
+      type: Array,
+      default: () => {
+        return []
+      }
+    },
+    seriesData: {
+      type: Array,
+      default: () => {
+        return []
+      }
+    }
+  },
   data() {
     return {
       dom: null,
@@ -30,10 +52,11 @@ export default {
       const that = this
       const option = {
         title: {
-          text: '人员',
+          text: this.name,
           textStyle: {
             color: '#fff',
-            fontSize: 16
+            fontSize: 14,
+            fontWeight: 500
           },
           left: 'center',
           bottom: '48%'
@@ -45,7 +68,7 @@ export default {
         legend: {
           show: true,
           orient: 'horizontal',
-          data: ['在岗人员', '离岗人员'],
+          data: this.legendData,
           y: 'bottom',
           icon: 'circle',
           textStyle: {
@@ -55,18 +78,18 @@ export default {
         },
         series: [
           {
-            name: '人员',
+            name: this.name,
             type: 'pie',
             radius: ['40%', '50%'],
             center: ['50%', '45%'],
             avoidLabelOverlap: false,
             hoverAnimation: false,
-
             data: [
               {
-                value: 335,
-                name: '在岗人员',
+                value: this.seriesData[0],
+                name: this.legendData[0],
                 label: {
+                  formatter: `${this.seriesData[0]}${this.unit}`,
                   color: '#00E4FF'
                 },
                 itemStyle: {
@@ -88,9 +111,10 @@ export default {
                 }
               },
               {
-                value: 31,
-                name: '离岗人员',
+                value: this.seriesData[1],
+                name: this.legendData[1],
                 label: {
+                  formatter: `${this.seriesData[1]}${this.unit}`,
                   color: '#D132FF'
                 },
                 itemStyle: {

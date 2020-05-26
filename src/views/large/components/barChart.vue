@@ -195,7 +195,7 @@ export default {
         justify-content: space-between;
         color: rgba(255, 255, 255, 0.8);
         padding: 0 20px;
-        margin: 10px 0;
+        margin: 15px 0;
         .bar-item {
           display: flex;
           align-items: center;

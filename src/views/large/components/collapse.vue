@@ -150,6 +150,30 @@ export default {
       const data = []
       this.totalList.forEach((item, index) => {
         if (item.company.indexOf(this.input) > -1) {
+          data.push({
+            company: item.company,
+            isShow: false,
+            itemList: item.itemList
+          })
+        }
+        // else {
+        //   const itemList = []
+        //   item.itemList.forEach((cell, i) => {
+        //     if (cell.project.indexOf(this.input) > -1) {
+        //       itemList.push({
+        //         project: cell.project
+        //       })
+        //     }
+        //   })
+        //   data.push({
+        //     company: item.company,
+        //     isShow: true,
+        //     itemList: itemList
+        //   })
+        // }
+      })
+      if (data.length === 0) {
+        this.totalList.forEach((item, index) => {
           const itemList = []
           item.itemList.forEach((cell, i) => {
             if (cell.project.indexOf(this.input) > -1) {
@@ -157,15 +181,14 @@ export default {
                 project: cell.project
               })
             }
-            console.log(itemList)
           })
           data.push({
             company: item.company,
-            isShow: false,
-            itemList: item.itemList
+            isShow: true,
+            itemList: itemList
           })
-        }
-      })
+        })
+      }
       this.dataList = data
     }
   }

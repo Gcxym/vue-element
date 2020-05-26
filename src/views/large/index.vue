@@ -8,9 +8,7 @@
     <div class="large-content">
       <div class="large-left">
         <div class="large-left-num">
-          <div>2</div>
-          <div>2</div>
-          <div>2</div>
+          <div v-for="(item,index) in underNum" :key="index">{{ item }}</div>
           <p>
             <img :src="itemImg" alt>
             在建项目
@@ -23,8 +21,18 @@
         <div class="large-pie large-chart">
           <div class="large-title">人员与安全（今日）</div>
           <div class="pieChart">
-            <pie-chart />
-            <pie-chart />
+            <pie-chart
+              name="人员"
+              unit="人"
+              :legend-data="['在岗人员', '离岗人员']"
+              :series-data="['89', '6']"
+            />
+            <pie-chart
+              name="安全事件"
+              unit="件"
+              :legend-data="['已处理', '待处理']"
+              :series-data="['45', '19']"
+            />
           </div>
         </div>
       </div>
@@ -57,7 +65,9 @@
             </div>
           </div>
         </div>
-        <globe-chart />
+        <div class="GlobeChart">
+          <globe-chart />
+        </div>
       </div>
       <div class="large-right large-chart">
         <div class="large-title">集团公司</div>
@@ -94,7 +104,9 @@ export default {
       timer: null,
       address: '南京市雨花台区',
       internationalNum: ['2', '5', '6'],
-      domesticlNum: ['4', '1', '0']
+      domesticlNum: ['4', '1', '0'],
+      underNum: ['2', '1', '4']
+      // legendData:[]
     }
   },
   created() {
@@ -114,6 +126,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/font/font.scss";
 .large-container {
   background: url("~@/assets/images/bg.png");
   background-size: 100% 100%;
@@ -147,9 +160,9 @@ export default {
     margin: 2% auto 0;
     color: #ffffff;
     .large-left {
-      width: 30%;
+      width: 28%;
       .large-left-num {
-        height: 15%;
+        height: 14%;
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -160,8 +173,8 @@ export default {
         position: relative;
         & > div {
           width: 20%;
-          height: 60%;
-          font-size: 36px;
+          height: 65%;
+          font-size: 50px;
           color: #ffbe60;
           display: flex;
           justify-content: center;
@@ -170,6 +183,7 @@ export default {
           border-radius: 2px;
           margin: 0 5px;
           background: rgba(60, 202, 255, 0.1);
+          font-family: DS-DIGIB-2;
         }
         p {
           position: absolute;
@@ -203,7 +217,7 @@ export default {
       }
     }
     .large-center {
-      width: 45%;
+      width: 47%;
       .large-img {
         width: 100%;
         display: flex;
@@ -219,12 +233,13 @@ export default {
           .large-number {
             display: flex;
             justify-content: center;
-            font-size: 36px;
+            font-size: 50px;
             color: #ffffff;
+            font-family: DS-DIGIB-2;
             & > div {
               position: relative;
-              width: 40px;
-              height: 60px;
+              width: 46px;
+              height: 65px;
               margin: 0 5px;
               & > div {
                 width: 100%;
@@ -244,10 +259,16 @@ export default {
           }
         }
       }
+      .GlobeChart {
+        height: 85%;
+        width: 100%;
+        margin-top: 10px;
+      }
     }
     .large-right {
       width: 25%;
       height: 100%;
+      background: url("~@/assets/images/bg_right.png");
     }
     .large-chart {
       background: url("~@/assets/images/frame.png");
