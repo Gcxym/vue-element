@@ -6,6 +6,7 @@
 
 <script>
 import echarts from 'echarts'
+import 'echarts/map/js/world.js'
 import 'echarts-gl'
 
 export default {
@@ -98,13 +99,12 @@ export default {
           }
         ]
       })
-      // baseTexture: chart;
       const option = {
         globe: {
           show: true,
-          baseTexture: require('@/assets/images/earth.jpg'),
           // baseTexture: chart,
-          displacementScale: 0.1,
+          baseTexture: require('@/assets/images/earth.jpg'),
+          displacementScale: 0.4,
           globeRadius: 70,
           shading: 'lambert',
           light: {
@@ -114,30 +114,115 @@ export default {
             main: {
               intensity: 1.0
             }
+          },
+          viewControl: {
+            targetCoord: [110.46, 10.92]
           }
+          // layers: [{
+          //   type: 'blend',
+          //   texture: chart
+          // }]
         },
         series: [
-          // {
-          //   type: 'scatter3D',
-          //   name: 'location',
-          //   coordinateSystem: 'globe',
-          //   blendMode: 'lighter',
-          //   symbolSize: 10,
-          //   itemStyle: {
-          //     color: '#B03A5B',
-          //     opacity: 1
-          //   },
-          //   label: {
-          //     show: true,
-          //     formatter: '南京建设公司城建智慧工地'
-          //   },
-          //   data: [
-          //     {
-          //       name: '重庆',
-          //       value: [107.7539, 30.1904, 0]
-          //     }
-          //   ]
-          // }
+          {
+            type: 'lines3D',
+            effect: {
+              show: true,
+              period: 3,
+              trailLength: 0.1
+            },
+            lineStyle: {
+              color: '#9ae5fc',
+              width: 1,
+              opacity: 1
+            },
+            tooltip: {
+              show: true,
+              trigger: 'item',
+              formatter() {
+                return 'jhfjdsagfjsdgfisdgfiusagfuiasgf'
+              }
+            },
+            data: [
+              {
+                coords: [
+                  [107.7539, 30.1904, 0],
+                  [135.193845, -25.304039, 0]
+                ]
+              },
+              {
+                coords: [
+                  [107.7539, 30.1904, 0],
+                  [-100.696295, 33.679979, 0]
+                ]
+              },
+              {
+                coords: [
+                  [107.7539, 30.1904, 0],
+                  [113.5107, 23.2196, 0]
+                ]
+              },
+              {
+                coords: [
+                  [107.7539, 30.1904, 0],
+                  [7.445147, 46.956241]
+                ]
+              }
+            ]
+          },
+          {
+            type: 'scatter3D',
+            name: 'location',
+            coordinateSystem: 'globe',
+            blendMode: 'lighter',
+            // symbol: `path://${require('@/assets/images/point.png')}`,
+            symbolSize: 10,
+            itemStyle: {
+              color: '#B03A5B',
+              opacity: 1,
+              borderColor: '#B03A5B'
+            },
+
+            emphasis: {
+              itemStyle: {
+                color: '#B03A5B'
+              }
+            },
+            data: [
+              {
+                name: '重庆',
+                value: [107.7539, 30.1904, 0],
+                label: {
+                  show: true,
+                  formatter: '南京建设公司城建智慧工地'
+                }
+              },
+              {
+                name: '广州',
+                value: [113.5107, 23.2196, 0],
+                label: {
+                  show: true,
+                  formatter: '广州建设公司城建智慧工地'
+                }
+              },
+              {
+                name: '美国',
+                value: [-100.696295, 33.679979, 0],
+                label: {
+                  show: true,
+                  formatter: '美国建设公司城建智慧工地'
+                }
+              },
+              {
+                name: '澳大利亚',
+                value: [135.193845, -25.304039, 0],
+                label: {
+                  show: true,
+                  formatter: '澳大利亚公司'
+                }
+              }
+            ]
+          }
         ]
       }
       that.dom.clear()

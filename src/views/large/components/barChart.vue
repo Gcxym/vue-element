@@ -17,7 +17,7 @@
           <p>总产值：</p>
         </div>
         <div>
-          889.0
+          689.0
           <span>万元</span>
         </div>
       </div>
@@ -35,8 +35,12 @@ export default {
   data() {
     return {
       dom: null,
-      isChange: true
+      isChange: true,
+      timer: null
     }
+  },
+  destroyed() {
+    clearInterval(this.timer)
   },
   mounted() {
     const that = this
@@ -48,6 +52,9 @@ export default {
         that.dom.resize()
       })
     })
+    this.timer = setInterval(() => {
+      that.setOption()
+    }, 5000)
   },
   methods: {
     setOption() {

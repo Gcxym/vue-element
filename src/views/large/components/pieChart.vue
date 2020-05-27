@@ -33,8 +33,12 @@ export default {
   data() {
     return {
       dom: null,
-      isChange: true
+      isChange: true,
+      timer: null
     }
+  },
+  destroyed() {
+    clearInterval(this.timer)
   },
   mounted() {
     const that = this
@@ -46,6 +50,9 @@ export default {
         that.dom.resize()
       })
     })
+    this.timer = setInterval(() => {
+      that.setOption()
+    }, 5000)
   },
   methods: {
     setOption() {
