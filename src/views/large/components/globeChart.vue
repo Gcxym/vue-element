@@ -31,78 +31,9 @@ export default {
   methods: {
     setOption() {
       const that = this
-      const chart = echarts.init(document.createElement('canvas'), null, {
-        width: 4096,
-        height: 2048
-      })
-      chart.setOption({
-        tooltip: {
-          backgroundColor: 'red',
-          alwaysShowContent: true
-          // formatter(item) {
-          //   return 'jhfjdsagfjsdgfisdgfiusagfuiasgf'
-          // }
-        },
-        geo: {
-          type: 'map',
-          map: 'world',
-          left: 0,
-          top: 0,
-          right: 0,
-          bottom: 0,
-          zoom: 0,
-          boundingCoords: [
-            [-180, 90],
-            [180, -90]
-          ],
-          roam: false,
-          itemStyle: {
-            borderColor: '#000d2d',
-            areaColor: '#2455ad',
-            emphasis: {
-              areaColor: '#357cf8'
-            }
-          },
-          label: {
-            fontSize: 24
-          }
-        },
-        series: [
-          {
-            type: 'effectScatter',
-            coordinateSystem: 'geo',
-            zlevel: 3,
-            rippleEffect: {
-              brushType: 'stroke'
-            },
-            label: {
-              show: true,
-              position: 'left',
-              fontSize: 18,
-              formatter: '{b}'
-            },
-            itemStyle: {
-              normal: {
-                color: '#ff0000'
-              }
-            },
-            data: [
-              {
-                name: '重庆',
-                value: [107.7539, 30.1904],
-                symbolSize: parseInt(Math.random() * 20 + 10),
-                label: {
-                  position: 'right'
-                }
-              }
-            ]
-          }
-        ]
-      })
       const option = {
         globe: {
           show: true,
-          // baseTexture: chart,
           baseTexture: require('@/assets/images/earth.jpg'),
           displacementScale: 0.4,
           globeRadius: 70,
@@ -112,7 +43,7 @@ export default {
               intensity: 1.0
             },
             main: {
-              intensity: 1.0
+              intensity: 0
             }
           },
           viewControl: {
@@ -175,7 +106,6 @@ export default {
             name: 'location',
             coordinateSystem: 'globe',
             blendMode: 'lighter',
-            // symbol: `path://${require('@/assets/images/point.png')}`,
             symbolSize: 10,
             itemStyle: {
               color: '#B03A5B',

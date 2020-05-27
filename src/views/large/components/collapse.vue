@@ -277,21 +277,6 @@ export default {
             itemList: item.itemList
           })
         }
-        // else {
-        //   const itemList = []
-        //   item.itemList.forEach((cell, i) => {
-        //     if (cell.project.indexOf(this.input) > -1) {
-        //       itemList.push({
-        //         project: cell.project
-        //       })
-        //     }
-        //   })
-        //   data.push({
-        //     company: item.company,
-        //     isShow: true,
-        //     itemList: itemList
-        //   })
-        // }
       })
       if (data.length === 0) {
         this.totalList.forEach((item, index) => {

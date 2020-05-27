@@ -106,7 +106,6 @@ export default {
       internationalNum: ['2', '5', '6'],
       domesticlNum: ['4', '1', '0'],
       underNum: ['2', '1', '4']
-      // legendData:[]
     }
   },
   created() {

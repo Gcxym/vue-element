@@ -122,7 +122,6 @@ export default {
             data: [200, 350, 250, 420],
             itemStyle: {
               normal: {
-                // 设置渐变色
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                   { offset: 0, color: '#00A2DB' },
                   { offset: 1, color: '#35D0E9' }
