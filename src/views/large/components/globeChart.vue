@@ -31,10 +31,11 @@ export default {
   methods: {
     setOption() {
       const that = this
+
       const option = {
         globe: {
           show: true,
-          baseTexture: require('@/assets/images/earth.jpg'),
+          baseTexture: require('@/assets/images/earthCopy.png'),
           displacementScale: 0.4,
           globeRadius: 70,
           shading: 'lambert',
@@ -48,11 +49,21 @@ export default {
           },
           viewControl: {
             targetCoord: [110.46, 10.92]
-          }
-          // layers: [{
-          //   type: 'blend',
-          //   texture: chart
-          // }]
+          },
+          layers: [
+            {
+              type: 'overlay',
+              texture: require('@/assets/images/dottedLine.png'),
+              shading: 'lambert',
+              distance: 10
+            },
+            {
+              type: 'overlay',
+              texture: require('@/assets/images/solidLine.png'),
+              shading: 'lambert',
+              distance: 5
+            }
+          ]
         },
         series: [
           {
