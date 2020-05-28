@@ -24,8 +24,9 @@
             <pie-chart
               name="人员"
               unit="人"
+              :length="10"
               :legend-data="['在岗人员', '离岗人员']"
-              :series-data="['89', '6']"
+              :series-data="['89', '35']"
             />
             <pie-chart
               name="安全事件"
@@ -39,10 +40,10 @@
       <div class="large-center">
         <div class="large-img">
           <div class="large-item">
-            <p>
+            <div>
               <img :src="srcGlobel" alt>
-              <img :src="srcInternational" alt>
-            </p>
+              <span>国际项目</span>
+            </div>
             <div class="large-number">
               <div v-for="(item,index) in internationalNum" :key="index">
                 <div />
@@ -52,10 +53,10 @@
             </div>
           </div>
           <div class="large-item">
-            <p>
+            <div>
               <img :src="srcChinaMap" alt>
-              <img :src="srcdDomestic" alt>
-            </p>
+              <span>国内项目</span>
+            </div>
             <div class="large-number">
               <div v-for="(item,index) in domesticlNum" :key="index">
                 <div />
@@ -208,7 +209,7 @@ export default {
         .pieChart {
           display: flex;
           width: 100%;
-          height: 80%;
+          height: 85%;
           & > div {
             width: 50%;
           }
@@ -225,10 +226,24 @@ export default {
           margin-right: 10%;
         }
         .large-item {
-          p {
+          &>div{
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 600;
             display: flex;
-            margin: 0;
+            justify-content: center;
+            align-items: center;
+            img{
+              width: 21%;
+            }
+            span{
+              margin-right: 6px;
+            }
           }
+          // p {
+          //   display: flex;
+          //   margin: 0;
+          // }
           .large-number {
             display: flex;
             justify-content: center;
@@ -237,7 +252,7 @@ export default {
             font-family: DS-DIGIB-2;
             & > div {
               position: relative;
-              width: 46px;
+              width: 40px;
               height: 65px;
               margin: 0 5px;
               & > div {

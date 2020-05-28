@@ -53,10 +53,12 @@ const actions = {
           reject('Verification failed, please Login again.')
         }
 
-        const { name, avatar } = data
+        // const { name, avatar } = data
+        const { name } = data
+        this.avatar = require('@/assets/images/avatar.jpg')
 
         commit('SET_NAME', name)
-        commit('SET_AVATAR', avatar)
+        commit('SET_AVATAR', this.avatar)
         resolve(data)
       }).catch(error => {
         reject(error)

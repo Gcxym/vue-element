@@ -17,6 +17,10 @@ export default {
       type: String,
       default: ''
     },
+    length: {
+      type: Number,
+      default: 0
+    },
     legendData: {
       type: Array,
       default: () => {
@@ -99,6 +103,9 @@ export default {
                   formatter: `${this.seriesData[0]}${this.unit}`,
                   color: '#00E4FF'
                 },
+                labelLine: {
+                  length2: this.length
+                },
                 itemStyle: {
                   normal: {
                     color: {
@@ -123,6 +130,10 @@ export default {
                 label: {
                   formatter: `${this.seriesData[1]}${this.unit}`,
                   color: '#D132FF'
+                },
+                labelLine: {
+                  length: 5,
+                  length2: 5
                 },
                 itemStyle: {
                   normal: {
@@ -159,7 +170,7 @@ export default {
       width: 100%;
       height: 0;
       position: relative;
-      padding-bottom: 50%;
+      padding-bottom: 55%;
       background: url("~@/assets/images/pie_base.png");
       background-repeat: no-repeat;
       background-size: 50%;

@@ -47,7 +47,7 @@ export default {
           ]
         },
         {
-          company: '南京城建高淳投资城建高淳投资有限公司',
+          company: '南京城建高淳投资城建有限公司',
           isShow: false,
           itemList: [
             { project: '城建智慧工地项目' },
@@ -58,7 +58,7 @@ export default {
           ]
         },
         {
-          company: '南京城建高淳投资城建高淳投资有限公司',
+          company: '南京城建高淳投资城建有限公司',
           isShow: false,
           itemList: [
             { project: '城建智慧工地项目' },
@@ -69,106 +69,7 @@ export default {
           ]
         },
         {
-          company: '南京城建高淳投资投投资资城建高淳投资有限',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资投投资资城建高淳投资有限',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资投投资资城建高淳投资有限',
+          company: '南京城建高淳资城建高淳投资有限',
           isShow: false,
           itemList: [
             { project: '城建智慧工地项目' },
@@ -201,29 +102,7 @@ export default {
           ]
         },
         {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资城建高淳投资有限公司',
-          isShow: false,
-          itemList: [
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' },
-            { project: '中江集团智慧工地项目' },
-            { project: '城建智慧工地项目' }
-          ]
-        },
-        {
-          company: '南京城建高淳投资投投资资城建高淳投资有限',
+          company: '南京城建建高淳投资有限公司',
           isShow: false,
           itemList: [
             { project: '城建智慧工地项目' },
@@ -245,7 +124,128 @@ export default {
           ]
         },
         {
-          company: '南京城建高淳投资城建高淳投资有限公司',
+          company: '南京城建投资资城建高淳投资有限',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京资城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京资城建高淳投资有限',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建资城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建投资资城建高淳投资有限',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建高淳投资有限公司',
+          isShow: false,
+          itemList: [
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' },
+            { project: '中江集团智慧工地项目' },
+            { project: '城建智慧工地项目' }
+          ]
+        },
+        {
+          company: '南京城建建高淳投资有限公司',
           isShow: false,
           itemList: [
             { project: '城建智慧工地项目' },
@@ -321,6 +321,7 @@ export default {
       }
       .sectionItem {
         p {
+          letter-spacing: 2px;
           line-height: 26px;
           margin: 0;
         }
